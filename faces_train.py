@@ -1,7 +1,10 @@
+import imp
 import os
 from PIL import Image
 import numpy as np
 import cv2
+import pickle
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 img_dir = os.path.join(BASE_DIR, "images")
@@ -41,4 +44,7 @@ for root, dirs, files in os.walk(img_dir):
                 roi = image_array[y : y + h, x : x + w]
                 x_train.append(roi)
                 y_labels.append(id_)
-print(label_ids)
+# print(label_ids)
+
+with open("labels.pickle","wb") as f:
+    pickle.dump(label_ids, f)

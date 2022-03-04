@@ -14,6 +14,18 @@ while True:
         roi_gray = gray[y : y + h, x : x + w]
         roi_color = frame[y : y + h, x : x + w]
 
+        color = (0, 255, 0)
+        color_line_width = 2
+        end_coordinate_x = x + w
+        end_coordinate_y = y + h
+        cv2.rectangle(
+            frame,
+            (x, y),
+            (end_coordinate_x, end_coordinate_y),
+            color=color,
+            thickness=color_line_width,
+        )
+
     cv2.imshow("frame", frame)
     if cv2.waitKey(20) & 0xFF == ord("q"):
         break

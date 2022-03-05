@@ -1,4 +1,5 @@
 import os
+from tkinter.tix import IMAGE
 from PIL import Image
 import numpy as np
 import cv2
@@ -32,8 +33,11 @@ for root, dirs, files in os.walk(img_dir):
             pil_image = Image.open(path).convert(
                 "L"
             )  # this converts Image into grayscale
+            size = (500, 500)
+            final_image = pil_image.resize(size, Image.ANTIALIAS)
+
             image_array = np.array(
-                pil_image, "uint8"
+                final_image, "uint8"
             )  # use uint8 because 8 bit makes 255 0-255 positive numbers
             # print(id_)
 

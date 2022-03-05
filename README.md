@@ -1,29 +1,22 @@
-
 # Facial Identification using Opencv
 
 This Project contains face recognition with face identification using opencv
 
-
-
 ## Acknowledgements
 
- - [Special Thanks for CodingEntrepeneurs](https://www.youtube.com/watch?v=PmZ29Vta7Vc&t=3081s)
- - [Opencv](https://opencv.org/)
- - [augmentedstartups for Learning computer Vision](https://www.augmentedstartups.com/)
-
+- [Special Thanks for CodingEntrepeneurs](https://www.youtube.com/watch?v=PmZ29Vta7Vc&t=3081s)
+- [Opencv](https://opencv.org/)
+- [augmentedstartups for Learning computer Vision](https://www.augmentedstartups.com/)
 
 ## Author
 
 - [Muhammad_Ammar_Tanweer](https://github.com/MUHAMMAD-AMMAR-TANWEER)
-
 
 ## Features
 
 - Training on custom Images
 - Light weight and for any OS
 - Facial Identification
-
-
 
 ## Run Locally
 
@@ -52,18 +45,16 @@ Train with the faces
 ```
 
 Run Faical Identification APP
+
 ```bash
     python faces.py
 ```
 
-
-
 ## 🚀 About Me
-I'm AI and computer vision engineer contains blockchain skills as well
 
+I'm an AI & Computer Vision Engineer with blockchain skills as well. I study every day because I strive to reach my goals.
 
 ## 🔗 Links
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-ammar-tanweer-4092a8186/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Ammar7370)
-

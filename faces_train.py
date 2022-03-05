@@ -1,4 +1,3 @@
-import imp
 import os
 from PIL import Image
 import numpy as np
@@ -10,6 +9,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 img_dir = os.path.join(BASE_DIR, "images")
 
 face_cascade = cv2.CascadeClassifier("data/haarcascade_frontalface_alt2.xml")
+recognizer = cv2.face.LBPHFaceRecognizer_create()
+
 
 current_id = 0
 label_ids = {}
@@ -34,7 +35,7 @@ for root, dirs, files in os.walk(img_dir):
             image_array = np.array(
                 pil_image, "uint8"
             )  # use uint8 because 8 bit makes 255 0-255 positive numbers
-            print(id_)
+            # print(id_)
 
             faces = face_cascade.detectMultiScale(
                 image_array, scaleFactor=1.5, minNeighbors=5
@@ -46,5 +47,8 @@ for root, dirs, files in os.walk(img_dir):
                 y_labels.append(id_)
 # print(label_ids)
 
-with open("labels.pickle","wb") as f:
+with open("labels.pickle", "wb") as f:
     pickle.dump(label_ids, f)
+
+recognizer.train(x_train, np.array(y_labels))
+recognizer.save("trainner.yml")

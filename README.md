@@ -52,7 +52,7 @@ Run Faical Identification APP
 
 ## 🚀 About Me
 
-I'm an AI & Computer Vision Engineer with blockchain skills as well. I study every day because I strive to reach my goals.
+I'm AI and computer vision engineer contains blockchain skills . I study every day because I strive to reach my goals.
 
 ## 🔗 Links
 
